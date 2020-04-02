@@ -6,7 +6,7 @@ class Config extends \Ilch\Config\Install
 {
     public $config = [
         'name' => 'Ilch Community',
-        'version' => '1.0',
+        'version' => '1.0.0',
         'ilchCore' => '2.0.32',
         'author' => 'Slipi',
         'link' => 'http://ilch.de',
