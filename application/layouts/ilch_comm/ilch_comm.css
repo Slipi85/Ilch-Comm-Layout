@@ -1,0 +1,145 @@
+.ilch-head {
+    background-color: transparent;
+    color: #999;
+    font-size:18px;
+    text-decoration: underline;
+}
+.ilch-head, .ilch-head a,
+.ilch-head a:hover {
+    color: #999;
+}
+#forum .forabg .topics li:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    margin: 0 auto;
+    background:linear-gradient(90deg, #fff, #e0e0e0,#fff);
+    margin-top: 5px;
+}
+#forum .forabg ul.forums {
+    border-top:1px solid #e0e0e0;
+}
+#forum .pull-right p{
+    margin:0;
+}
+#forum .forabg ul.forenlist li.header dl.title dt {
+    padding: 0px 5px !important;;
+}
+#forum .forabg ul.forenlist li.header dl.title {
+    min-height:26px !important;
+}
+#forum .ilch-border {
+    border:none;
+}
+#forum>h1>a, #forum >h1>.fa {
+    color:#999;
+    text-decoration: none;
+}
+#forum .btn-label {
+    background:transparent !important;;
+}
+#forum >h1,#forum .statistic .header {
+    background:#353535;
+    padding:5px 12px !important;
+    font-size:18px;
+    color: #fff;
+}
+.article-keywords-box a,.article-box .ellipsis>.badge {
+    background:#353535;
+    color:#999 !important;
+    padding:2px 3px;
+    border-radius:3px
+}
+.article-keywords-box a:before {
+    content:"#";
+}
+.article-keywords-box a:last-child {
+    margin-left:2px;
+}
+.article-keywords-box a:hover {
+    color:#fff !important;
+    background:#555;
+}
+.article-keywords-box a:last-child:before {
+    content:"►";
+}
+.article-keywords-box span {
+    font-size:15px !important;
+}
+ .article-box .ellipsis>.badge {
+    color:#fff !important;
+}
+.btn-primary {
+    background: transparent;
+    border-right-color: transparent !important;
+    border-top-color: transparent !important;
+    border-bottom: 1px solid #d4af37;
+    border-left: 1px solid transparent;
+    border-radius:0px;
+    color: #d4af37;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    color:#333 !important;
+    background:transparent !important;
+    border-right:1px solid #fff; 
+    border-top: 1px solid #fff 
+}
+blockquote {
+    border-color:green;
+    border-width: 20%;
+    border-radius:5px;
+    font-size:15px;
+}
+
+.ilch-bg {
+    background:#fff;
+    border:0px !important;
+    
+}
+.ilch-bg:nth-of-type(2n+1) {
+    border-bottom:1px solid #e0e0e0 !important;
+}
+.panel-primary > .panel-heading {
+    background:transparent;
+    color:#999;
+    border-color:transparent;
+}
+.panel-primary {
+    
+    border-color: #333;
+}
+.profil h3, .profile-sidebar .push-menu i {
+    color:#d4af37 !important;
+}
+.profile-sidebar .profile-usermenu ul li.active a {
+    color: green !important;
+    border-left: 2px solid green !important;
+    margin-left: -2px;
+    border-right: 2px solid green !important;
+    margin-right: -2px;
+}
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+    z-index: 3;
+    color: #d4af37;
+    cursor: default;
+    background-color: #333;
+    border-color: #999;
+}
+.pagination > li > a, .pagination > li > span {
+    color: #d4af37;
+}
+.pagination > li > a:hover, .pagination > li > span:hover {
+    background:#333;
+    border-color:#999;
+}
+@media (min-width: 768px) {
+    #forum .forabg ul.forenlist li.header dl.title dt {
+        padding: 0px 12px !important;
+    }
+   
+}
