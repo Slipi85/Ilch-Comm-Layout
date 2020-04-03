@@ -5,7 +5,7 @@ return [
     'imprint' => 'Imprint',
     'privacy' => 'Privacy',
     'descSlider' => 'Recommendation: 680px × 280px',
-    'descSliderText' => 'max. 40 Zeichen',
+    'descSliderText' => 'max. 40 characters',
     'infotext' => 'Info-Text',
     'headerheading' => 'Headline Header',
     'header' => 'Header',
