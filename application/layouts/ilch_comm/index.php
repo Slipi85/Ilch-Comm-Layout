@@ -1,4 +1,4 @@
-<?php /** @var $this \Ilch\Layout\Frontend */ ?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -38,20 +38,18 @@
                         <li><a href="#"><i class="fa fa-youtube"></i></a></li>
                       </ul>
                         <?php
-                        echo $this->getMenu
-                        (
-                              1, '<div class="panel-body">%c</div>',
-                              [
-                        		    'menus' => [
-                        			  'ul-class-root' => 'list-unstyled ilch_menu_u',
-                        			  'ul-class-child' => '',
-                        			  'allow-nesting' => false
-                          			],
-                          			'boxes' => [
-                          			  'render' => false
-                          			],
-                        		  ]
-                        );
+                        echo $this->getMenu(1,
+                        '<div class="panel-body">%c</div>',
+                        [
+                            'menus' => [
+                                'ul-class-root' => 'list-unstyled ilch_menu_u',
+                                'ul-class-child' => '',
+                                'allow-nesting' => false
+                            ],
+                            'boxes' => [
+                                'render' => false
+                            ],
+                        ]);
                         ?>
                     </div>
                 </div>
@@ -65,20 +63,20 @@
                     <div class="col-lg-9">
                       <div class="panel-body">
                         <ul class="list-unstyled ilch_menu_u">
-                    	    <?php
+                            <?php
                             echo $this->getMenu(1,
-                      		  '<li><a href="#" title="%s">%s</a>%c</li>',
-                      		  [
-                      		    'menus' => [
-                      			  'ul-class-root' => 'list-unstyled ilch_menu_u',
-                      			  'ul-class-child' => '',
-                      			  'allow-nesting' => false
-                      			],
-                      			'boxes' => [
-                      			  'render' => false
-                      			],
-                      		  ]);
-                      		?>
+                           '<li><a href="#" title="%s">%s</a>%c</li>',
+                            [
+                                'menus' => [
+                                'ul-class-root' => 'list-unstyled ilch_menu_u',
+                                'ul-class-child' => '',
+                                'allow-nesting' => false
+                                ],
+                                'boxes' => [
+                                    'render' => false
+                                ],
+                            ]);
+                            ?>
                         </ul>
                       </div>
                     </div>
@@ -101,15 +99,13 @@
                     </div>
                     <div class="col-xs-12 col-lg-3">
                         <?php
-                        echo $this->getMenu
-                        (
-                            1,
-                            '<div class="panel panel-community">
-                                 <div class="panel-heading">%s</div>
-                                    <div class="panel-body">
-                                        %c
-                                    </div>
-                             </div>'
+                        echo $this->getMenu(1,
+                        '<div class="panel panel-community">
+                             <div class="panel-heading">%s</div>
+                                <div class="panel-body">
+                                    %c
+                                </div>
+                         </div>'
                         );
                         ?>
                     </div>
@@ -118,19 +114,19 @@
         </div>
         <a id="totop" href="#top"></a>
         <div class="footer">
-          <div class="main-content">
-              <div class="community">
+            <div class="main-content">
+                <div class="community">
                     <div class="row">
                         <div class="col-xs-12 col-sm-6">
-                            &copy; Ilch 2 Free Layout | CMS by <a href="http://www.ilch.de/" target="_blank">Ilch</a>
+                            &copy; Ilch 2 Free Layout | CMS by <a href="https://www.ilch.de/" target="_blank">Ilch</a>
                         </div>
                         <div class="col-xs-12 col-sm-6 nav">
-                          <ul>
-                            <li><a href="/"><?=$this->getTrans('home') ?></a></li>
-                            <li><a href="<?=$this->getUrl() ?>index.php/contact/index/index"><?=$this->getTrans('contact') ?></a></li>
-                            <li><a href="<?=$this->getUrl() ?>index.php/imprint/index/index"><?=$this->getTrans('imprint') ?></a></li>
-                            <li><a href="<?=$this->getUrl() ?>index.php/privacy/index/index"><?=$this->getTrans('privacy') ?></a></li>
-                          </ul>
+                            <ul>
+                                <li><a href="<?=$this->getUrl() ?>"><?=$this->getTrans('home') ?></a></li>
+                                <li><a href="<?=$this->getUrl(['module' => 'contact', 'controller' => 'index', 'action' => 'index']) ?>"><?=$this->getTrans('contact') ?></a></li>
+                                <li><a href="<?=$this->getUrl(['module' => 'imprint', 'controller' => 'index', 'action' => 'index']) ?>"><?=$this->getTrans('imprint') ?></a></li>
+                                <li><a href="<?=$this->getUrl(['module' => 'privacy', 'controller' => 'index', 'action' => 'index']) ?>"><?=$this->getTrans('privacy') ?></a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
