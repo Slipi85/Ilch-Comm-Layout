@@ -10,8 +10,8 @@ return [
     'headerheading' => 'Überschrifft Header',
     'header' => 'Header',
     'logo' => 'Logo',
-    'color' => 'Farbe für verlinkungen',
-    'hover' => 'Hover für verlinkungen',
+    'color' => 'Farbe für Verlinkungen',
+    'hover' => 'Hover für Verlinkungen',
     'linkColorDescp' => 'Hier können all die Verlinkungen eine Farbe zugeteilt werden',
     'linkHoverDescp' => 'Hier können all die Verlinkungen einen Hover zugeteilt werden',
 ];
