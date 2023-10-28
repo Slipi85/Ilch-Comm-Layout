@@ -18,50 +18,44 @@
     </head>
     <body id="top">
         <header>
-            <nav class="navbar navbar-gaming navbar-fixed-top hidden-sm hidden-md hidden-lg">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-main" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="/">Navigation</a>
-                    </div>
-
-                    <div class="collapse navbar-collapse mobile" id="bs-navbar-collapse-main">
-                      <ul class="list-unstyled ilch_menu_ul social-icon panel-body">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                      </ul>
-                        <?php
-                        echo $this->getMenu(1,
-                        '<div class="panel-body">%c</div>',
-                        [
-                            'menus' => [
-                                'ul-class-root' => 'list-unstyled ilch_menu_u',
-                                'ul-class-child' => '',
-                                'allow-nesting' => false
-                            ],
-                            'boxes' => [
-                                'render' => false
-                            ],
-                        ]);
-                        ?>
-                    </div>
+            <nav class="navbar navbar-expand-lg navbar-dark navbar-gaming bg-dark  d-sm-block d-md-none">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="<?=$this->getUrl() ?>"><?=$this->getTrans('navigation') ?></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bs-navbar-collapse-main" aria-controls="bs-navbar-collapse-main" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mobile" id="bs-navbar-collapse-main">
+                  <ul class="list-unstyled ilch_menu_ul social-icon panel-body">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                  </ul>
+                    <?php
+                    echo $this->getMenu(1,
+                    '<div class="panel-body">%c</div>',
+                    [
+                        'menus' => [
+                            'ul-class-root' => 'list-unstyled ilch_menu_u',
+                            'ul-class-child' => '',
+                            'allow-nesting' => false
+                        ],
+                        'boxes' => [
+                            'render' => false
+                        ],
+                    ]);
+                    ?>
                 </div>
+              </div>
             </nav>
-              <div id="nav" class="hidden-xs">
+              <div id="nav" class="d-none d-sm-block">
                 <div class="container">
-                  <div class="community community-nav">
-                    <div class="col-lg-3 logo">
+                  <div class="community community-nav row">
+                    <div class="col-sm-3 logo">
                       <a href="/"><img src="<?=$this->getBaseUrl($this->getLayoutSetting('logo')) ?>" alt="logo"></a>
                     </div>
-                    <div class="col-lg-9">
-                      <div class="panel-body">
+                    <div class="col-sm-9">
+                      <div class="card-body">
                         <ul class="list-unstyled ilch_menu_u">
                             <?php
                             echo $this->getMenu(1,
@@ -89,20 +83,20 @@
         <div class="main-content">
             <div class="community">
                 <div class="row">
-                    <div class="col-xs-12 col-lg-9">
+                    <div class="col-12 col-xl-9">
                         <?=$this->getHmenu() ?>
-                        <div class="panel panel-default">
-                            <div class="panel-body">
+                        <div class="card card-default">
+                            <div class="card-body">
                                 <?=$this->getContent() ?>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-lg-3">
+                    <div class="col-12 col-xl-3">
                         <?php
                         echo $this->getMenu(1,
-                        '<div class="panel panel-community">
-                             <div class="panel-heading">%s</div>
-                                <div class="panel-body">
+                        '<div class="card panel-community mb-3">
+                             <div class="card-header">%s</div>
+                                <div class="card-body">
                                     %c
                                 </div>
                          </div>'
@@ -117,10 +111,10 @@
             <div class="main-content">
                 <div class="community">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-6">
+                        <div class="col-12 col-md-6">
                             &copy; Ilch 2 Free Layout | CMS by <a href="https://www.ilch.de/" target="_blank">Ilch</a>
                         </div>
-                        <div class="col-xs-12 col-sm-6 nav">
+                        <div class="col-12 col-md-6 nav">
                             <ul>
                                 <li><a href="<?=$this->getUrl() ?>"><?=$this->getTrans('home') ?></a></li>
                                 <li><a href="<?=$this->getUrl(['module' => 'contact', 'controller' => 'index', 'action' => 'index']) ?>"><?=$this->getTrans('contact') ?></a></li>
