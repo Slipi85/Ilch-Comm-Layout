@@ -86,12 +86,17 @@ hr {
     line-height: 2
 }
 
+.navbar-gaming >.container-fluid>#bs-navbar-collapse-main {
+    margin-top:8px;
+    max-height:550px;
+    overflow: scroll;
+} 
 
 header .container .community .carousel {
     max-height:500px;
 }
 
-.mobile>.panel-body {
+.mobile>.card-body {
     padding:15px;
 }
 
@@ -130,7 +135,7 @@ header .container .community .carousel {
     max-width:1140px;
 }
 
-#nav .panel-body> ul > li> a:after
+#nav .card-body> ul > li> a:after
     {
     content: " ";
     position: absolute;
@@ -147,7 +152,7 @@ header .container .community .carousel {
     z-index: -1;
 }
 
-#nav .panel-body>ul> li:hover > a:after {
+#nav .card-body>ul> li:hover > a:after {
     width:100%;
     z-index:1;
 }
@@ -162,7 +167,7 @@ header .container .community .carousel {
     padding: 2px;
     border-top: none;
     box-shadow: #3a3732 0 2px 4px;
-    width: 18rem;
+    width: 12rem;
 }
 #nav ul li:hover>ul{
     opacity: 1;
@@ -187,8 +192,8 @@ header .container .community .carousel {
 }
 
 header> .container {
-    margin-top: 51px;
-    width: 100%;
+    margin-top: 0px;
+    max-width: 100%;
 }
 
 header .container .community {
@@ -257,6 +262,7 @@ header .container .community .gaming-name {
 .community {
     background-color: #fff;
     padding: 10px;
+    overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -299,12 +305,12 @@ header .container .community .gaming-name {
     .panel-default {
         border-radius: 4px;
     }
-    .panel-body {
+    .card-body {
         padding:15px;
     }
 }
 
-.panel-community > .panel-heading {
+.panel-community > .card-header {
     color: #fff;
     background-color: #353535;
     margin-top: 0;
@@ -319,23 +325,23 @@ header .container .community .gaming-name {
     text-align: center;
 }
 
-.panel-community > .panel-heading:before {
+.panel-community > .card-header:before {
     content:"►";
     color:#fff;
     float:left;
 }
 
-.panel-community > .panel-body li {
+.panel-community > .card-body li {
     line-height: 35px;
     border-bottom: 1px solid #e0e0e0;
 }
 
-.panel-community > .panel-body a {
+.panel-community > .card-body a {
     color: #333;
     text-decoration: none;
 }
 
-.panel-community >.panel-body > hr {
+.panel-community >.card-body > hr {
     margin-top:5px;
     margin-bottom:5px;
 }
@@ -419,5 +425,6 @@ header .container .community .gaming-name {
 @media (min-width: 768px) {
     .footer .main-content .community .nav {
         text-align: right;
+        display:block;
     }
 }
