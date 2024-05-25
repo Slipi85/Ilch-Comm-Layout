@@ -51,11 +51,6 @@ hr {
     color: #FFF;
 }
 
-.navbar-gaming .container-fluid .navbar-collapse {
-    margin-right: -30px;
-    margin-left: -30px;
-}
-
 .navbar-gaming .container-fluid .navbar-collapse .panel {
     border: 0;
 }
@@ -65,50 +60,39 @@ hr {
     color: #32333B;
 }
 
-.navbar-gaming .dropdown-menu > li > a:hover,
-.navbar-gaming .dropdown-menu > li > a:focus {
-    text-decoration: none;
-    color: #32333B;
-    background-color: #32333B;
-}
-
-.navbar-nav > li > .dropdown-menu {
-    background-color: #40434E;
-}
-
-.navbar-toggle .icon-bar {
+.navbar-toggler .icon-bar {
     background-color: #EEE;
 }
 
 .mobile a {
-    color:#fff;
+    color: #fff;
     text-decoration: none;
     line-height: 2
 }
 
-.navbar-gaming >.container-fluid>#bs-navbar-collapse-main {
-    margin-top:8px;
-    max-height:550px;
+.navbar-gaming > .container-fluid > #bs-navbar-collapse-main {
+    margin-top: 8px;
+    max-height: 550px;
     overflow: scroll;
 } 
 
 header .container .community .carousel {
-    max-height:500px;
+    max-height: 500px;
 }
 
-.mobile>.card-body {
-    padding:15px;
+.mobile > .card-body {
+    padding: 15px;
 }
 
 #nav .community .logo img {
-    width:135px
+    width: 135px
 }
 
 #nav {
     background:#353535;
     border-top:1px solid #222;
     z-index: 200;
-    position:fixed;
+    position: fixed;
     width: 100%;
     display: block;
     top: 0;
@@ -120,23 +104,44 @@ header .container .community .carousel {
     margin:0;
     padding:0;
 }
-#nav li, .social-icon li {
+#nav li {
     float:left;
     padding:10px 10px;
     position: relative;
+}
+nav.navbar ul.list-unstyled li {
+    display: block;
+    text-align: left;
+    margin-left: 0;
+    line-height: 35px;
+    border-bottom: 1px solid #303030;
+}
+nav.navbar ul.social-icon li {
+    float: left;
+    padding-right: 10px;
+}
+nav.navbar ul.social-icon li:last-child {
+    float: none;
+    padding-right: 0;
+}
+nav.navbar ul.list-unstyled li a {
+    text-decoration: none;
+    color:#999;
+}
+nav.navbar ul.list-unstyled li a:hover {
+    text-decoration: none;
+    color:#fff;
 }
 #nav a {
     text-decoration: none;
     color:#999;
     font-size:15px;
 }
-
-#nav .container{
+#nav .container {
     max-width:1140px;
 }
 
-#nav .card-body> ul > li> a:after
-    {
+#nav .card-body > ul > li > a:after {
     content: " ";
     position: absolute;
     top: 40px;
@@ -152,9 +157,9 @@ header .container .community .carousel {
     z-index: -1;
 }
 
-#nav .card-body>ul> li:hover > a:after {
-    width:100%;
-    z-index:1;
+#nav .card-body >ul > li:hover > a:after {
+    width: 100%;
+    z-index: 1;
 }
 
 #nav ul ul {
@@ -262,7 +267,6 @@ header .container .community .gaming-name {
 .community {
     background-color: #fff;
     padding: 10px;
-    overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -425,6 +429,6 @@ header .container .community .gaming-name {
 @media (min-width: 768px) {
     .footer .main-content .community .nav {
         text-align: right;
-        display:block;
+        display: block;
     }
 }

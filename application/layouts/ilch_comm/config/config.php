@@ -6,8 +6,8 @@ class Config extends \Ilch\Config\Install
 {
     public $config = [
         'name' => 'Ilch Community',
-        'version' => '1.0.1',
-        'ilchCore' => '2.1.32',
+        'version' => '1.1.0',
+        'ilchCore' => '2.2.0',
         'author' => 'Slipi',
         'link' => 'https://ilch.de',
         'desc' => 'Schlichtes Community Layout. Die Navigation wird im Admincenter unter Menü3 gesteuert.',

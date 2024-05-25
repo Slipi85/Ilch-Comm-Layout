@@ -14,4 +14,5 @@ return [
     'hover' => 'Hover of hyperlink',
     'linkColorDescp' => 'Here you can choose the color for hyperlinks',
     'linkHoverDescp' => 'Here you can choose the color of the hover',
+    'navigation' => 'Navigation',
 ];
