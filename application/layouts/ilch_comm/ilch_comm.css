@@ -8,6 +8,9 @@
 .ilch-head a:hover {
     color: #999;
 }
+#forum h1 {
+    display: none;
+}
 #forum .forabg .topics li:after {
     content: " ";
     position: absolute;
@@ -22,7 +25,7 @@
 #forum .forabg ul.forums {
     border-top:1px solid #e0e0e0;
 }
-#forum .pull-right p{
+#forum .float-end p{
     margin:0;
 }
 #forum .forabg ul.forenlist li.header dl.title dt {
@@ -47,6 +50,9 @@
     font-size:18px;
     color: #fff;
 }
+#forum .btn span.badge {
+    color: #666;
+}
 .article-keywords-box a,.article-box .ellipsis>.badge {
     background:#353535;
     color:#999 !important;
@@ -69,7 +75,7 @@
 .article-keywords-box span {
     font-size:15px !important;
 }
- .article-box .ellipsis>.badge {
+.article-box .ellipsis >.badge {
     color:#fff !important;
 }
 .btn-primary {
@@ -82,12 +88,10 @@
     color: #d4af37;
     text-decoration: none;
 }
-
 .btn-primary:hover {
-    color:#333 !important;
+    color: #333 !important;
     background:transparent !important;
-    border-right:1px solid #fff; 
-    border-top: 1px solid #fff 
+    border-color: #333; 
 }
 blockquote {
     border-color:green;
@@ -142,4 +146,7 @@ blockquote {
         padding: 0px 12px !important;
     }
    
+}
+.shop-card-index a, .shop-card-index a:hover {
+    text-decoration: none;
 }

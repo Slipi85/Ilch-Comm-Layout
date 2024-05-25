@@ -14,4 +14,5 @@ return [
     'hover' => 'Hover für Verlinkungen',
     'linkColorDescp' => 'Hier können all die Verlinkungen eine Farbe zugeteilt werden',
     'linkHoverDescp' => 'Hier können all die Verlinkungen einen Hover zugeteilt werden',
+    'navigation' => 'Navigation',
 ];
